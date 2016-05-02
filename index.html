@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bird Clicker</title>
+</head>
+<body>
+	<h1 style="text-align:center;">Click on the bird's name to display the bird's image.</h1>
+	
+	<h2>Bird Names :</h2>
+    <ul id="bird-list"></ul>
+    <button id= "adminBtn">ADMIN</button>
+    <div id ="admin">   	
+    	<form id ="adminForm">
+    		<p>Bird Name: <input type="text" class ="adminInput" id ="adminBirdName"></p>
+    		<p>Img Url: <input type="text" class= "adminBirdUrl" id= "adminBirdUrl"></p>
+    		<p># Clicks: <input type ="text" class= "adminBirdClicks" id ="adminBirdClicks"></p>
+    	</form>  
+    	<button id ="adminCancel">CANCEL</button>
+    	<button id ="adminSave">SAVE</button>	
+    </div>
+    <div id="bird">
+    	<img id="bird-img" src="" alt="beautiful bird">
+        <h3 id ="bird-name"></h3>
+        <h3 id="bird-count"></h3>
+        
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
