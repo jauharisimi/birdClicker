@@ -60,7 +60,7 @@ var octopus = {
 	adminCancel: function(){
 		adminView.hide();
 	},
-	// hides admin display and saves new cat data when save button is clicked.
+	// hides admin display and saves new bird data when save button is clicked.
 	adminSave : function(){
 		adminBirdName.value = model.currentBird.name;
 		//model.currentBird.name = adminBirdName.value;
@@ -105,7 +105,7 @@ var birdListView = {
 		this.birdListElem.innerHTML ='';
 		for(i=0; i< birds.length; i++){
 			bird = birds[i];
-			//create a DOM element for each cat.
+			//create a DOM element for each bird.
 			elem = document.createElement('li');
 			elem.textContent = bird.name;
 			// when the bird's name in the list is clicked, update the bird's picture.
